@@ -4,6 +4,7 @@ import Configure from "./Configure";
 import Home from "./Home";
 import Login from "./Login";
 import Logout from "./Logout";
+import Exit from "./Exit";
 import { contextAPI } from "../Context";
 
 const Drawer = createDrawerNavigator();
@@ -24,6 +25,7 @@ const MyDrawer = () => {
           <Drawer.Screen name="Settings" component={Configure} />
           <Drawer.Screen name="Go to Start Url" component={Home} />
           <Drawer.Screen name="Logout" component={Logout} />
+          <Drawer.Screen name="Exit" component={Exit} />
         </>
       ) : (
         <>
